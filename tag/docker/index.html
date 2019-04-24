@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | Norman</title>
+<title>docker | Norman</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,12 +12,6 @@
 <link rel="shortcut icon" href="https://xiedingyi.github.io/favicon.ico?v=1556096462167">
 <link rel="stylesheet" href="https://xiedingyi.github.io/styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -99,35 +93,28 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
-            
-            <div class="post-content">
-              <p>这是关于的页面，可以在这里向世界介绍你！</p>
-
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://xiedingyi.github.io/post/hello-gridea">
-                  <h3 class="post-title">
-                    Hello Gridea
-                  </h3>
+          <h2 class="current-tag">标签: docker</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://xiedingyi.github.io/post/docker">
+                  <h2 class="post-title">docker</h2>
                 </a>
+                <div class="post-date">
+                  2019-04-24
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
               </div>
-            
-
-            
               
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
+            </article>
+          
 
-              
-            
-
-          </div>
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
       </div>
@@ -149,29 +136,6 @@ var app = new Vue({
 })
 
 </script>
-
-
-  
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-
-      var gitalk = new Gitalk({
-        clientID: '71408eee306d5d19ae84',
-        clientSecret: 'de609109dda95b277a282af0621d502a076563cc',
-        repo: 'xiedingyi.github.io',
-        owner: 'xiedingyi',
-        admin: ['xiedingyi'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
 
 
 
