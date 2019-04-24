@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>感悟 | Norman</title>
+<title>test | Norman</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="https://xiedingyi.github.io/favicon.ico?v=1556095244817">
 <link rel="stylesheet" href="https://xiedingyi.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -90,35 +96,43 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 感悟</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://xiedingyi.github.io/post/hello-gridea">
-                  <h2 class="post-title">Hello Gridea</h2>
-                </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+          <div class="post-detail">
+            <h2 class="post-title">test</h2>
+            <div class="post-date">2019-04-24</div>
+            
+            <div class="post-content">
+              <p>test</p>
 
-                </div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://xiedingyi.github.io/tag/gfs" class="tag">
+                    gfs
+                  </a>
+                
               </div>
-              
-                <a class="right" href="https://xiedingyi.github.io/post/hello-gridea">
-                  <div class="feature-container" style="background-image: url('https://xiedingyi.github.io/post-images/hello-gridea.png')">
-                  </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xiedingyi.github.io/post/about">
+                  <h3 class="post-title">
+                    关于
+                  </h3>
                 </a>
-              
-            </article>
-          
+              </div>
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -140,6 +154,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '71408eee306d5d19ae84',
+        clientSecret: 'de609109dda95b277a282af0621d502a076563cc',
+        repo: 'xiedingyi.github.io',
+        owner: 'xiedingyi',
+        admin: ['xiedingyi'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
